@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>sku列表</title>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+      <script src="http://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="../src/libs/bootstrap/3.3.0/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../src/libs/datetimepicker/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="../src/css/base.css" />
+
+    <script type="text/javascript" src="../src/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../src/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../src/libs/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="../src/libs/datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js" ></script>
+
+</head>
+<body class="page-container">
+
+<div class="container-fluid">
+
+    <!--导航-->
+    <ul class="nav nav-tabs" role="tablist">
+    	<li role="presentation" class="active">
+    		<a href="#">订单信息</a>
+    	</li>
+    	<li role="presentation">
+    		<a href="#">商品信息</a>
+    	</li>
+    	<li role="presentation">
+    		<a href="#">优惠活动</a>
+    	</li>
+    </ul>
+    <!--导航--> 
+
+    <!--查询-->
+    <div class="panel panel-default">
+    	<div class="panel-heading">
+    		<h3 class="panel-title">查询</h3>
+    	</div>
+    	<div class="panel-body">
+    		<div class="skuQuery form-horizontal">
+    		 	<div class="row">
+    		 		<div class="col-md-6">
+    		 			 <div class="form-group">
+    		 			 	<label for="inputEmail3" class="col-md-8 control-label">商品编号：</label>
+    		 			 	<div class="col-md-16">
+    		 			 		<input type="text" class="form-control" id="inputEmail3" ></div>
+    		 			 </div>
+    		 		</div>	 
+    		 		<div class="col-md-6">
+    		 			<div class="form-group">
+    		 			 	<label for="inputEmail3" class="col-md-8 control-label">商品编号：</label>
+    		 			 	<div class="col-md-16">
+    		 			 		<input type="text" class="form-control" id="inputEmail3" ></div>
+    		 			 </div>
+    		 		</div>	 
+    		 		<div class="col-md-6">
+    		 			<div class="form-group">
+    		 			 	<label for="inputEmail3" class="col-md-8 control-label">商品编号：</label>
+    		 			 	<div class="col-md-16">
+    		 			 		<input type="text" class="form-control" id="inputEmail3" ></div>
+    		 			 </div>
+    		 		</div>	 
+    		 		<div class="col-md-6">
+    		 			<button type="button" class="btn btn-primary btn-block">搜&nbsp;&nbsp;&nbsp;&nbsp;索</button>
+    		 		</div>
+    		 	</div>
+    		 </div>
+    	</div>
+    </div>
+    <!--查询-->
+
+    <!--sku列表-->
+    <div class="panel panel-default">
+    	<div class="panel-heading">
+    		<h3 class="panel-title">查询</h3>
+    	</div>
+    	<div class="panel-body">
+
+             <!--操作-->
+    		 <div class="list-tools-bar">
+                <div class="btn-group">
+                      <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> <span class="opName">新建</span></a>
+                      <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> <span class="opName">删除</span></a>
+                      <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-save" aria-hidden="true"></span> <span class="opName">上架</span></a>
+                      <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-open" aria-hidden="true"></span> <span class="opName">下架</span></a>
+                </div>
+    		 </div>
+             <!--操作-->
+             
+             <!--sku列表--> 
+    		 <div class="skuList">
+    		 	<table class="table table-bordered table-striped table-hover">
+                    <thead>
+    		 		<tr>
+    		 			<th></th>
+                        <th style="width:30px"><input type="checkbox" name="" id="" /></th>
+    		 			<th>缩略图</th>
+    		 			<th>商品编号</th>
+    		 			<th>商品类别</th>
+    		 			<th>款式编号</th>
+    		 			<th>品牌</th>
+    		 			<th>实物库存</th>
+    		 			<th>可售库存</th>
+    		 			<th>锁定库存</th>
+    		 			<th>国际码</th>
+    		 			<th>颜色</th>
+    		 			<th>劵组号</th>
+    		 			<th>市场价</th>
+                        <th width="170">操作</th>
+    		 		</tr>
+                    </thead>
+    		 		<tr>
+    		 			<td>1</td>
+                        <td><input type="checkbox" name="" id="" /></td>
+    		 			<td>
+    		 				<img src="http://placehold.it/50x50" width="50" height="50" ></td>
+    		 			<td>商品编号</td>
+    		 			<td>商品类别</td>
+    		 			<td>款式编号</td>
+    		 			<td>品牌</td>
+    		 			<td>实物库存</td>
+    		 			<td>可售库存</td>
+    		 			<td>锁定库存</td>
+    		 			<td>国际码</td>
+    		 			<td>颜色</td>
+    		 			<td>劵组号</td>
+    		 			<td>市场价</td>
+                        <td>
+                                            
+                            <a href="" class="btn btn-link">
+                            <span class="glyphicon glyphicon-align-justify"></span> 详情</a>
+
+                            <a href="" class="btn btn-link">
+                            <span class="glyphicon glyphicon-check"></span> 审核</a>
+
+                        </td>
+    		 		</tr>
+    		 		<tr>
+    		 			<td>2</td>
+                        <td><input type="checkbox" name="" id="" /></td>
+    		 			<td>
+    		 				<img src="http://placehold.it/50x50" width="50" height="50" ></td>
+    		 			<td>商品编号</td>
+    		 			<td>商品类别</td>
+    		 			<td>款式编号</td>
+    		 			<td>品牌</td>
+    		 			<td>实物库存</td>
+    		 			<td>可售库存</td>
+    		 			<td>锁定库存</td>
+    		 			<td>国际码</td>
+    		 			<td>颜色</td>
+    		 			<td>劵组号</td>
+    		 			<td>市场价</td>
+                        <td>
+                                            
+                            <a href="" class="btn btn-link">
+                            <span class="glyphicon glyphicon-align-justify"></span> 详情</a>
+
+                            <a href="" class="btn btn-link">
+                            <span class="glyphicon glyphicon-check"></span> 审核</a>
+
+                        </td>
+    		 		</tr>
+    		 		<tr class="info">
+    		 			<td>3</td>
+                        <td><input type="checkbox" name="" id="" /></td>
+    		 			<td>
+    		 				<img src="http://placehold.it/50x50" width="50" height="50" ></td>
+    		 			<td>选中</td>
+    		 			<td>商品类别</td>
+    		 			<td>款式编号</td>
+    		 			<td>品牌</td>
+    		 			<td>实物库存</td>
+    		 			<td>可售库存</td>
+    		 			<td>锁定库存</td>
+    		 			<td>国际码</td>
+    		 			<td>颜色</td>
+    		 			<td>劵组号</td>
+    		 			<td>市场价</td>
+                        <td>
+                                            
+                            <a href="" class="btn btn-link">
+                            <span class="glyphicon glyphicon-align-justify"></span> 详情</a>
+
+                            <a href="" class="btn btn-link">
+                            <span class="glyphicon glyphicon-check"></span> 审核</a>
+
+                        </td>
+    		 		</tr>
+    		 	</table>
+    		 </div>
+             <!--sku列表-->
+             
+             <!--分页-->
+             <div class="skuPaging">
+                <nav>
+                    <ul class="pagination">
+                        <li><a href="#">&laquo;</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
+                </nav>
+             </div>   
+             <!--分页--> 
+
+    	</div>
+    </div>
+    <!--sku列表-->
+  </div>
+</body>
+</html>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>编辑商品</title>
+
+
+    
+
+    <link rel="stylesheet" type="text/css" href="Static/libs/bootstrap/3.3.0/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="Static/libs/datetimepicker/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="Static/css/base.css" />
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="Static/libs/html5.min.js"></script>
+    <script src="Static/libs/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="Static/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Static/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Static/libs/datetimepicker/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="Static/libs/datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js" ></script>
+
+    <!--验证器-->
+    <script type="text/javascript" src="Static/libs/validation/1.13.1/dist/jquery.validate.js"></script> 
+    <script type="text/javascript" src="Static/libs/validation/1.13.1/dist/localization/messages_zh.js"></script> 
+    <!--验证器-->
+
+
+    <!--图片上传-->
+    <link type="text/css" rel="stylesheet" href="Static/libs/jqueryui/1.10.2/css/jquery-ui.min.css" media="screen" />
+
+    <link  type="text/css" rel="stylesheet" href="Static/libs/plupload/jquery.ui.plupload/css/jquery.ui.plupload.css" media="screen" />
+
+    <script type="text/javascript" src="Static/libs/plupload/plupload.full.min.js"></script>
+
+    <script type="text/javascript" src="Static/libs/jqueryui/1.10.2/jquery-ui.min.js" charset="UTF-8"></script>
+
+    <script type="text/javascript" src="Static/libs/plupload/jquery.ui.plupload/jquery.ui.plupload.js"></script>
+       
+    <script type="text/javascript" src="Static/libs/plupload/i18n/zh_CN.js"></script>
+    <!--图片上传-->
+
+
+    <!--编辑器-->
+    <link type="text/css" rel="stylesheet" href="Static/libs/kindeditor/4.1.10/themes/default/default.css" media="screen" />
+    <script type="text/javascript" src="Static/libs/kindeditor/4.1.10/kindeditor-all-min.js"></script>
+    <script type="text/javascript" src="Static/libs/kindeditor/4.1.10/lang/zh_CN.js"></script>
+    <!--编辑器--> 
+    
+
+</head>
+<body class="page-container">
+
+    <div class="container-fluid">
+
+        <div class="alert alert-danger alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert"> 
+                <span aria-hidden="true">&times;</span>
+                <span class="sr-only">Close</span>
+            </button>
+            <ul>
+                <li>错误1</li>
+                <li>错误2</li>
+                <li>错误3</li>
+            </ul>
+        </div>
+
+        <!--导航-->
+        <div class="row">
+            <div class="col-md-24">
+                <div class="pull-left">
+                    <h4>编辑商品: 5824225585</h4>
+                </div>
+                <div class="pull-right">
+                    <button type="button" class="btn btn-primary">
+                        保存
+                        <span class="glyphicon glyphicon-floppy-disk"></span>
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        返回
+                        <span class="glyphicon glyphicon-share-alt"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--导航-->
+        
+        <form action="" class="form-horizontal" id="commentForm">
+            <!--编辑商品信息-->
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <!--类目-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputEmail1" class="col-md-8 control-label">
+                                    类目：
+                                    <span class="red">*</span>
+                                </label>
+                                <div class="col-md-16">
+                                    <input type="text" class="form-control input-sm" id="inputEmail1" value="虚拟商品123" disabled></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--类目-->
+
+                    <!--品牌-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputEmail2" class="col-md-8 control-label">
+                                    品牌：
+                                    <span class="red">*</span>
+                                </label>
+                                <div class="col-md-16">
+                                    <input type="text" class="form-control input-sm" id="inputEmail2" value="虚拟商品123" disabled></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--品牌-->
+
+                    <!--款号-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-md-8 control-label">
+                                    品牌：
+                                    <span class="red">*</span>
+                                </label>
+                                <div class="col-md-16">
+                                    <input type="text" class="form-control input-sm" id="inputEmail3" value="123" disabled></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputEmail4" class="col-md-8 control-label">
+                                    商品名：
+                                    <span class="red">*</span>
+                                </label>
+                                <div class="col-md-16">
+                                    <input type="text" class="form-control input-sm" id="inputEmail4" value="保存后自动生成" disabled></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputEmail5" class="col-md-8 control-label">
+                                    券组：
+                                    <span class="red">*</span>
+                                </label>
+                                <div class="col-md-16">
+                                    <input type="text" class="form-control input-sm" id="inputEmail5" value="保存后自动生成" disabled></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--款号-->
+
+                    <!--按钮-->
+                    <div class="row">
+                        <div class="col-md-8"></div>
+                        <div class="col-md-8">
+                            <div class="btn-group btn-group-justified">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-info active">编辑</button>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-success">保存</button>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary">删除</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--按钮-->
+                </div>
+                <!--基础信息--> 
+            </div>
+
+            <!--商品基础信息-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">编辑商品信息</h3>
+                </div>
+                <div class="panel-body">
+                    <!--商品标题-->
+                    <div class="row">
+                        <div class="col-md-16">
+                            <div class="form-group">
+                                <label for="inputEmail6" class="col-md-4 control-label">
+                                    商品标题：
+                                    <span class="red">*</span>
+                                </label>
+                                <div class="col-md-20">
+                                    <input type="text" minlength="2" required name="name" class="form-control input-sm" id="inputEmail6" ></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="panel-note">
+                                还能输入
+                                <span class="red">20</span>
+                                字
+                            </p>
+                        </div>
+                    </div>
+                    <!--商品标题-->
+
+                    <!--商品有效期-->
+                    <div class="row">
+                        <div class="col-md-16">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-md-4 control-label">
+                                    商品有效期：
+                                    <span class="red">*</span>
+                                </label>
+
+                                <div class="col-md-16">
+                                    <div class="panel-time">
+                                        <div class="form-group">
+                                            <label for="inputEmail3" class="col-md-6 control-label">开始时间：</label>
+                                            <div class="col-md-18">
+                                                <div class="input-group date form_time_1" data-date="" data-date-format="yyyy-mm-dd HH:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
+                                                    <input class="form-control input-sm" size="16" type="text" value="">
+                                                    <span class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-time"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputEmail3" class="col-md-6 control-label">结束时间：</label>
+                                            <div class="col-md-18">
+                                                <div class="input-group date form_time_2" data-date="" data-date-format="yyyy-mm-dd HH:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
+                                                    <input class="form-control input-sm" size="16" type="text" value="">
+                                                    <span class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-time"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--商品有效期-->
+
+                    <!--市场价-->
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label for="inputEmail8" class="col-md-8 control-label">
+                                    市场价格：
+                                    <span class="red">*</span>
+                                </label>
+                                <div class="col-md-16">
+                                    <input type="text" class="form-control input-sm" name="price-1" minlength="2" required  id="inputEmail8" ></div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label for="inputEmail9" class="col-md-8 control-label">
+                                    麦包价格：
+                                    <span class="red">*</span>
+                                </label>
+                                <div class="col-md-16">
+                                    <input type="text" class="form-control input-sm" name="price-2" minlength="2" required  id="inputEmail9" ></div>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <p class="panel-note">元</p>
+                        </div>
+                    </div>
+                    <!--市场价-->
+
+                    <!--外部编码-->
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label for="inputEmail10" class="col-md-8 control-label">
+                                    外部编码：
+                                    <span class="red">*</span>
+                                </label>
+                                <div class="col-md-16">
+                                    <input type="text" class="form-control input-sm" id="inputEmail10" ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--外部编码-->
+
+                    <!--商品数量-->
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label for="inputEmail11" class="col-md-8 control-label">
+                                    商品数量：
+                                    <span class="red">*</span>
+                                </label>
+                                <div class="col-md-16">
+                                    <input type="text" class="form-control input-sm" id="inputEmail11" ></div>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <p class="panel-note">件</p>
+                        </div>
+                    </div>
+                    <!--商品数量-->
+                                     
+                                     
+                                 
+                    <!--商品图片-->
+                    <div class="row">
+                        <div class="col-md-16">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-md-4 control-label">
+                                    商品图片：
+                                    <span class="red">*</span>
+                                </label>
+                                <div class="col-md-20">
+                                     
+                                     <div class="panel-uploading">
+                                        
+                                         <div class="uploading-img">
+                                             <div class="row">
+                                                 <div class="col-md-24">
+                                                     <div id="uploader">
+                                                         <p>
+                                                             Your browser doesn't have Flash, Silverlight or HTML5 support.
+                                                         </p>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <div class="uploading-note">
+                                             <p class="red">图片至少上传一张，图片类型只能为gif,png,jpg,jpeg,且大小不超过500。</p>
+                                             <p>第一张图片为默认图片,系统自动生成缩略图 。</p>
+                                         </div>
+
+                                     </div>  
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--商品图片-->
+
+                    
+                    <!--商品描述-->
+                    <div class="row">
+                        <div class="col-md-16">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-md-4 control-label">
+                                    商品描述：
+                                    <span class="red">*</span>
+                                </label>
+                                <div class="col-md-20">
+                                     <textarea name="content" style="width:800px;height:400px;visibility:hidden;"></textarea>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--商品描述-->
+
+                    </div>
+                <!--商品基础信息-->
+            </div>
+
+            <div class="panel panel-default">
+                <!--门店信息-->            
+                <div class="panel-heading">
+                    <h3 class="panel-title">门店信息</h3>
+                </div>
+                <div class="panel-body">
+
+                    <!--保存修改-->            
+                    <div class="row">
+                        <div class="col-md-7"></div>
+                    </div>
+                    <!--保存修改--> 
+                </div>
+                <!--门店信息--> 
+            </div>
+            
+            <!--编辑商品信息-->
+            <div class="row">
+                <div class="col-md-23">
+                    <button type="submit" class="btn btn-success">保存修改</button>
+                    <button type="button" class="btn btn-success">取消修改</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <script type="text/javascript">
+
+        $('.form_time_1').datetimepicker({
+            language:  'zh-CN'
+        });
+
+        $('.form_time_2').datetimepicker({
+            language:  'zh-CN'
+        });
+
+    </script>
+
+
+<script type="text/javascript">
+$(function() {
+    var uploader=$("#uploader").plupload({
+        // General settings
+        runtimes : 'html5,flash,silverlight,html4',
+        url : "/examples/upload",
+        
+        //限制上传文件大小
+        max_file_size : '500kb',
+
+        //上传时文件被分割大小
+        chunk_size: '1mb',
+ 
+        //压缩图片
+        resize : {
+            width : 200,
+            height : 200,
+            quality : 90,
+            crop: true 
+        },
+ 
+        //限制文件类型和大小
+        filters : [
+            {title : "Image files", extensions : "jpg,gif,png"},
+            {title : "Zip files", extensions : "zip,avi"}
+        ],
+ 
+        // 允许重命名
+        rename: true,
+         
+        // 分类文件夹
+        sortable: true,
+ 
+        // 拖动
+        dragdrop: true,
+ 
+        // 查看缩略图
+        views: {
+            list: true,
+            thumbs: true, // Show thumbs
+            active: 'thumbs'
+        },
+        // Flash settings
+        flash_swf_url : 'Static/libs/plupload/Moxie.swf',
+        // Silverlight settings
+        silverlight_xap_url : 'Static/libs/plupload/Moxie.xap'
+
+    });
+    
+    //当上传队列中所有文件都上传完成后触发 UploadComplete-->complete
+    uploader.bind('complete', function(up, files) { 
+
+    })
+
+});
+</script>
+
+
+<script type="text/javascript">
+var editor;
+KindEditor.ready(function(K) {
+    editor = K.create('textarea[name="content"]', {
+        allowFileManager : true
+    });
+})
+</script>
+
+
+<script type="text/javascript">
+$("#commentForm").validate();    
+</script>
+  
+</body>
+</html>

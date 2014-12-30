@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>首页</title>
+
+    <link rel="stylesheet" type="text/css" href="../src/libs/bootstrap/3.3.0/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../src/libs/datetimepicker/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="../src/css/base.css" />
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../src/libs/html5.min.js"></script>
+    <script src="../src/libs/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="../src/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../src/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../src/libs/datetimepicker/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="../src/libs/datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js" ></script>
+
+    <!--验证器-->
+    <script type="text/javascript" src="../src/libs/validation/1.13.1/jquery.validate.js"></script> 
+    <script type="text/javascript" src="../src/libs/validation/1.13.1/localization/messages_zh.js"></script> 
+    <!--验证器-->
+
+
+    <!--图片上传-->
+    <link type="text/css" rel="stylesheet" href="../src/libs/jqueryui/1.10.2/css/jquery-ui.min.css" media="screen" />
+
+    <link  type="text/css" rel="stylesheet" href="../src/libs/plupload/jquery.ui.plupload/css/jquery.ui.plupload.css" media="screen" />
+
+    <script type="text/javascript" src="../src/libs/plupload/plupload.full.min.js"></script>
+
+    <script type="text/javascript" src="../src/libs/jqueryui/1.10.2/jquery-ui.min.js" charset="UTF-8"></script>
+
+    <script type="text/javascript" src="../src/libs/plupload/jquery.ui.plupload/jquery.ui.plupload.js"></script>
+       
+    <script type="text/javascript" src="../src/libs/plupload/i18n/zh_CN.js"></script>
+    <!--图片上传-->
+
+
+    <!--编辑器-->
+    <link type="text/css" rel="stylesheet" href="../src/libs/kindeditor/4.1.10/themes/default/default.css" media="screen" />
+    <script type="text/javascript" src="../src/libs/kindeditor/4.1.10/kindeditor-all-min.js"></script>
+    <script type="text/javascript" src="../src/libs/kindeditor/4.1.10/lang/zh_CN.js"></script>
+    <!--编辑器--> 
+
+</head>
+
+<body>
+<style type="text/css">
+.page-home{
+    max-width:1200px;
+    margin:0 auto;
+}
+.page-home .home-head{
+	height:220px;
+}    
+</style>
+    
+    <div class="page-home">
+           <div class="home-head" style="background:url(http://placehold.it/1200x220) no-repeat top center;">
+           </div>  
+           
+           <form action="" class="form-horizontal" id="commentForm">
+               <div class="container-fluid" style="margin-top:70px;">
+                   <div class="row">
+                      <div class="col-md-8"> 
+                      </div>
+                      <div class="col-md-8">
+                          <div class="form-group">
+                              <div class="col-md-24">
+                                  <input type="text" class="form-control input-sm" name="name" id="inputEmail1" placeholder="用户名" ></div>
+                          </div>
+                          <div class="form-group">
+                              <div class="col-md-24">
+                                  <input type="text" class="form-control input-sm" name="password" id="inputEmail1" placeholder="密码" ></div>
+                          </div>
+                          <div class="form-group">
+                              <div class="col-md-12 text-left">
+                                  <label class="checkbox-inline">
+                                      <input type="checkbox" id="inlineCheckbox1" name="save" value="option1">记住密码</label>
+                              </div> 
+                              <div class="col-md-12 text-right">
+                                   <a href="">忘记密码？</a>
+                              </div>  
+                          </div>
+                          <button type="submit" class="btn btn-primary  btn-block">登陆</button>
+                      </div>
+                      <div class="col-md-8"> 
+                      </div>
+                   </div>    
+               </div> 
+           </form>
+
+    </div>
+
+<script type="text/javascript">
+$("#commentForm").validate({
+        errorPlacement : function(error, element) { 
+            if (element.hasClass("time")) {
+                error.appendTo(element.parent().parent())
+            }else if(element.is(":checkbox")){
+                error.appendTo(element.parent().parent())  
+            }else{
+                error.appendTo(element.parent())  
+            };
+        },
+        rules: {
+            name:{
+                required:true,
+                number:true
+            },
+            password:"required",
+            save:"required"
+        },
+        messages: {
+            name:{
+                required:"订单号必须填写",
+                number:"订单号为数字"
+            },
+            password:"不要忘记填写时间",
+            save:"我是测试"
+        }
+});
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>后台首页</title>
+
+    
+    <link rel="stylesheet" type="text/css" href="../src/libs/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../src/libs/easyui/1.4.1/themes/bootstrap/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../src/libs/easyui/1.4.1/themes/icon.css">
+
+    <link rel="stylesheet" href="../src/css/base.css" />
+
+    <script type="text/javascript" src="../src/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../src/libs/easyui/1.4.1/jquery.easyui.min.js"></script>
+    <script src="../src/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="top-bar container-fluid">
+        <div class="row">
+            <div class="pull-left">
+                <div class="top-logo">麦包包O2O平台</div>
+            </div>
+            <div class="pull-right">
+                <nav class="navbar navbar-inverse" role="navigation">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    您好,
+                                    <span class="u-name">李先生</span> <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">子菜单</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">子菜单</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">子菜单</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">子菜单</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">子菜单</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">退出</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    设置 <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">子菜单</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">子菜单</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">子菜单</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">子菜单</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">帮助</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+    <div class="easyui-layout" data-options="fit:true" style="width:100%;height:800px;" id="baseLayout">
+        <!-- 菜单 begin -->
+        <div data-options="region:'west',split:false" title="系统菜单" style="width:150px;">
+
+            <div class="easyui-accordion" data-options="border:false" style="width:auto;height:300px;">
+                <div title="主菜单一" style="overflow:auto;padding:10px;">
+                    <ul class="sub-menu">
+                        <li class="item">
+                            <a href="skuList.html">子菜单测试</a>
+                        </li>
+                        <li class="item">
+                            <a href="order.html">子菜单测试二</a>
+                        </li>
+                    </ul>
+                </div>
+                <div title="主菜单一" style="overflow:auto;padding:10px;">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                <div title="主菜单一" style="overflow:auto;padding:10px;">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                <div title="主菜单一" style="overflow:auto;padding:10px;">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- 菜单 end -->
+
+        <!-- 主内容 being -->
+        <div data-options="region:'center'">
+            <div id="base-tabs" class="easyui-tabs" data-options="border:false,fit:true"></div>
+        </div>
+        <!-- 主内容 end --> 
+    </div>
+
+    <script src="../src/layout.js"></script>
+
+</body>
+</html>

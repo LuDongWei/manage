@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>后台首页</title>
+	
+	<style type="text/css">
+		body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {
+			margin: 0;
+			padding: 0
+		}
+
+		table {
+			border-collapse: collapse;
+			border-spacing: 0
+		}
+
+		fieldset,img {
+			border: 0
+		}
+
+		address,caption,cite,code,dfn,em,th,var {
+			font-style: normal;
+			font-weight: 400
+		}
+
+		li {
+			list-style: none
+		}
+		
+		input,textarea,select,strong {
+			font-family: inherit;
+			font-size: inherit
+		}
+
+		input,textarea,select {
+			*font-size: 100%
+		}
+
+	</style>
+	
+	<link rel="stylesheet" type="text/css" href="../libs/bootstrap/3.3.0/css/bootstrap.css">
+	
+    <link rel="stylesheet" type="text/css" href="../libs/easyui/1.4.1/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../libs/easyui/1.4.1/themes/icon.css">
+    <script type="text/javascript" src="../libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../libs/easyui/1.4.1/jquery.easyui.min.js"></script>
+
+    <link rel="stylesheet" href="../src/css/base.css" />
+
+</head>
+<body>
+
+	<style type="text/css">
+		.rg-selects {
+			height:23px;
+			text-align: left;
+		}
+
+		.rg-selects .rg-item {
+			position: relative;
+			margin-right:4px;
+			height: 21px;
+			border-top:1px solid #888;
+			border-left:1px solid #888;
+			border-bottom:1px solid #afafaf;
+			border-right:1px solid #afafaf;
+			float:left;
+			display: inline-block;
+			*display:inline;
+			*zoom:1;
+		}
+
+		.rg-selects .rg-current{
+			height:19px;
+			margin:1px;
+			font-size: 12px;
+			cursor: pointer;
+			float:left;
+			background-color:#fff;
+			*display: inline;
+		}
+
+		.rg-selects .rg-cur-title{
+			float:left;
+			height: 19px;
+			line-height:19px;
+			padding:0 8px;
+			color:#333;
+		}
+
+		.rg-selects .rg-ico{
+			width:19px;
+			height: 19px;
+			float: left;
+			background-color: #888;
+			position: relative;
+		}
+
+		.rg-selects .rg-arrow{
+			width: 0;
+			height: 0;
+			border-width: 4px 4px;
+			border-style: solid;
+			border-color: #fff #888 #888;
+			font-size: 0;
+			line-height: 0;
+			position: absolute;
+			top:8px;
+			left:5px;
+		}
+
+		.rg-selects .rg-list{
+			display: none;
+			position: absolute;
+			top:21px;
+			left: -1px;
+			float:left;
+		}
+
+		.rg-selects .rg-list{
+			border:1px solid #888;
+			padding:8px;
+			background-color: #fff;
+			width:400px;
+			text-align: left;
+			color:#333;
+			box-shadow:3px 3px 5px #ababab
+		}
+
+		.rg-selects .rg-list .rg-tip{
+			color:#888;
+		}
+
+		.rg-selects .rg-list a{
+			display: inline-block;
+			*display:inline;
+			*zoom:1;
+			width:100px;
+			text-align: left;
+			line-height: 22px;
+			height: 22px;
+			text-indent: 4px;
+		}
+
+		.rg-selects .rg-list .rg-item-select {
+			background-color:#ff6c00;
+			color:#fff;
+		}
+
+		.rg-selects .rg-list .rg-item-select:hover {
+			color:#fff;
+		}
+
+		.rg-selects .rg-over .rg-list{
+			display: block;
+		}
+
+		.rg-selects .rg-over .rg-ico{
+			background-color: #a5a5a5;
+		}
+
+		.rg-selects .rg-over .rg-arrow{
+			border-color: #fff #a5a5a5 #a5a5a5;
+		}
+		
+		.dm-region-box{
+			border:1px solid #ccc;
+			padding:15px;
+		}
+		
+		.dm-region-box .dm-region-bd{
+			padding:10px 0 0 0;
+			overflow:hidden;
+			*zoom:1;
+		}
+		
+		.dm-region-box .dm-filter-area{
+			float:left;
+		}
+		
+		.dm-region-box .dm-apply-area{
+			float:left;
+		}
+		
+		.dm-tool-roll-area{
+			width:250px;
+			height:350px;
+			overflow:scroll;
+			border:1px solid;
+		}
+		
+		.dm-exchange-area{
+			padding:150px 50px 0 50px;
+			float:left;
+		}
+		
+		.dm-exchange-area .dm-exchange-add,
+		.dm-exchange-area .dm-exchange-remove{
+			padding:10px 0;
+		}
+		
+		.dm-tool-roll-area li{
+			height:25px;
+			line-height:25px;
+			white-space:nowrap;
+		}
+		
+		.dm-tool-roll-area li label{
+			font-weight:normal;
+		}
+		
+		.dm-tool-operate label{
+			font-weight:normal;
+		}
+		
+		.dm-exchange-add a{
+			color:#333;
+			text-decoration:none;
+			background:url(http://cca.mbaobao.com/mkts/201412/17/iconfont-r.png) no-repeat right center;
+			padding-right:18px;
+		}
+		
+		.dm-exchange-remove a{
+			color:#333;
+			text-decoration:none;
+			background:url(http://cca.mbaobao.com/mkts/201412/17/iconfont-l.png) no-repeat right center;
+			padding-right:18px;
+		}
+	</style>
+	
+	
+	<script type="text/javascript">
+		var shopApplyRegionData = [{
+			'name' : '桐乡市山东路店',
+			'code' : 'T117'
+		},{
+			'name' : '嘉兴市梅湾街店',
+			'code' : 'S000'
+		}];
+	</script>
+
+	<div class="dm-region-box">
+		<div class="dm-region-hd">
+			<span id="js-map-region" class="map-region clearfix"></span>
+		</div>
+		
+		<div class="dm-region-bd">
+			<div class="dm-filter-area">
+				<div class="dm-tool-operate">
+					<span>筛选门店</span>
+					<span><input id="js-dm-check-allshop" name="thisAllshop" type="checkbox" value="" /><label for="js-dm-check-allshop">全选</label></span>
+				</div>
+				<div class="dm-tool-area">
+					<div class="dm-tool-roll-area" id="js-dm-filter-list"><ul></ul></div>
+				</div>
+			</div>
+			
+			<div class="dm-exchange-area">
+				<div class="dm-exchange-add"><a href="#" id="js-dm-exchange-add">添加</a></div>
+				<div class="dm-exchange-remove"><a href="#" id="js-dm-exchange-remove">删除</a></div>
+			</div>
+			
+			<div class="dm-apply-area">
+				<div class="dm-tool-operate">
+					<span>适用门店</span>
+					<span><input id="js-dm-check-applyshop" name="thisApplyshop" type="checkbox" value="" /><label for="js-dm-check-applyshop">全选</label></span>
+				</div>
+				<div class="dm-tool-roll-area" id="js-dm-apply-list"><ul></ul></div>
+			
+			</div>
+		</div>
+		
+		<!--选中的适用门店-->
+		<input type="hidden" name="selectShop" id="js-data-applyshop" value="" />
+	</div>
+	
+	
+    <script src="../src/plugins/region/region.js"></script>
+	<script type="text/javascript">
+		var mapRegion = new Region({
+			source: 'http://www.mshop.cn/ajax/getStoreByArea',
+			target: "#js-map-region",
+			inputId: ["input_provinceId", "input_cityId", "input_districtId"]
+		});
+		
+		mapRegion.init();
+	</script>
+
+</body>
+</html>

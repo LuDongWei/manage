@@ -1,0 +1,135 @@
+body {
+	font-size: 12px;
+    padding:0;
+    margin:0;
+}
+
+.page-container{
+    padding:10px;
+    min-width: 970px;
+}
+
+.m-b-10{
+    margin-bottom: 10px;
+}
+.m-t-10{
+    margin-top:10px;
+}
+.nav-tabs {
+    margin-bottom:10px;
+}
+.checkbox-inline{
+    display:block;
+}
+
+.list-tools-bar {
+    text-align: left;
+    margin:6px 0 10px 0;
+}
+.table{
+    margin-bottom:10px;
+}
+.pagination{
+    margin:0px 0px 10px 0px;
+}
+
+/*================sku列表页面================*/
+.skuQuery .form-group{
+    margin-bottom: 0px; 
+}
+
+/* --sku列表操作-- */
+.skuHandle {
+	line-height: 30px;
+	text-align: center;
+}
+.skuHandle .opName {
+	color: #000000;
+}
+.skuHandle a:hover {
+	text-decoration: none;
+}
+
+/*================订单详情================*/
+
+/*头部菜单*/
+.top-bar {
+    height: 50px;
+    background-color: #0081c2;
+    color:#fff;
+    background-image: -webkit-linear-gradient(top,#428bca 0,#3278b3 100%);
+    background-image: -o-linear-gradient(top,#428bca 0,#3278b3 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#428bca),to(#3278b3));
+    background-image: linear-gradient(to bottom,#428bca 0,#3278b3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff3278b3', GradientType=0);
+}
+.top-bar .navbar-inverse{
+    background-color: transparent;
+    border:0;
+}
+.top-logo {
+    font-size: 20px;
+    line-height: 50px;
+    text-indent: 10px;
+}
+
+.top-bar .navbar-inverse .navbar-nav>li>a {
+    color:#fff;
+}
+.top-bar .navbar {
+    margin-bottom:0;
+}
+
+/* 系统菜单 */
+ 
+.sub-menu{
+    padding:0;
+    margin:0;
+}
+.sub-menu li{
+    list-style:none;
+    padding:0;
+    margin: 0;
+}
+
+.sub-menu li a{
+    height: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    color:#0081c2;
+}
+
+.sub-menu li a:hover{
+    text-decoration: underline;
+}
+/*error*/
+label.error{
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-top: 5px;
+}
+
+/*================商品信息================*/
+.base-inf{
+    padding:10px;
+    border:1px solid #cccccc;
+}
+.red{
+    color:#f00d1a;
+}
+.panel-time{
+    border:1px solid #cccccc;
+    padding:15px 15px 0px 15px;
+}
+.panel-note{
+    line-height:30px;
+}
+.uploading-note{
+    margin-top:15px;
+}
+

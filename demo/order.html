@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>订单详情</title>
+
+  
+
+    <link rel="stylesheet" type="text/css" href="../src/libs/bootstrap/3.3.0/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../src/libs/datetimepicker/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="../src/css/base.css" />
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+      <script src="http://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]--> 
+
+    <script type="text/javascript" src="../src/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../src/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../src/libs/datetimepicker/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="../src/libs/datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js" ></script>
+
+    <!--验证器-->
+    <script type="text/javascript" src="../src/libs/validation/1.13.1/jquery.validate.js"></script> 
+    <script type="text/javascript" src="../src/libs/validation/1.13.1/localization/messages_zh.js"></script> 
+    <!--验证器-->
+
+
+    <!--图片上传-->
+    <link type="text/css" rel="stylesheet" href="../src/libs/jqueryui/1.10.2/css/jquery-ui.min.css" media="screen" />
+
+    <link  type="text/css" rel="stylesheet" href="../src/libs/plupload/jquery.ui.plupload/css/jquery.ui.plupload.css" media="screen" />
+
+    <script type="text/javascript" src="../src/libs/plupload/plupload.full.min.js"></script>
+
+    <script type="text/javascript" src="../src/libs/jqueryui/1.10.2/jquery-ui.min.js" charset="UTF-8"></script>
+
+    <script type="text/javascript" src="../src/libs/plupload/jquery.ui.plupload/jquery.ui.plupload.js"></script>
+       
+    <script type="text/javascript" src="../src/libs/plupload/i18n/zh_CN.js"></script>
+    <!--图片上传-->
+
+
+    <!--编辑器-->
+    <link type="text/css" rel="stylesheet" href="../src/libs/kindeditor/4.1.10/themes/default/default.css" media="screen" />
+    <script type="text/javascript" src="../src/libs/kindeditor/4.1.10/kindeditor-all-min.js"></script>
+    <script type="text/javascript" src="../src/libs/kindeditor/4.1.10/lang/zh_CN.js"></script>
+    <!--编辑器--> 
+
+</head>
+<body class="page-container">
+
+<form action="" class="form-horizontal" id="commentForm">
+
+<div class="container-fluid">
+    <!--导航-->
+    <ul class="nav nav-tabs" role="tablist">
+    	<li role="presentation" class="active">
+    		<a href="#">订单信息</a>
+    	</li>
+    	<li role="presentation">
+    		<a href="#">商品信息</a>
+    	</li>
+    	<li role="presentation">
+    		<a href="#">优惠活动</a>
+    	</li>
+    </ul>
+    <!--导航-->
+
+    <!--订单-->
+    <div class="panel panel-default">
+    	<div class="panel-heading">
+    		<h3 class="panel-title">订单</h3>
+    	</div>
+    	<div class="panel-body">
+    	  <div class="form-horizontal">
+            
+            <!--订单号--> 
+            <div class="row">
+            	<div class="col-md-7">
+            		<div class="form-group">
+            			<label for="inputEmail3" class="col-md-8 control-label">订单号：</label>
+            			<div class="col-md-16">
+            				<input type="text" class="form-control input-sm" name="orderId" id="inputEmail3" ></div>
+                    </div>
+            	</div>
+             </div>
+             <!--订单号-->
+             
+             <!--订单状态-->
+             <div class="row">    
+
+                <div class="col-md-7">
+            		<div class="form-group">
+            			<label for="inputEmail3" class="col-md-8 control-label">状态：</label>
+            			<div class="col-md-16">
+            				<input type="text" class="form-control input-sm" id="inputEmail3" ></div>
+            		</div>
+            	</div>
+
+            	<div class="col-md-7">
+            		<div class="form-group">
+            			<label for="inputEmail3" class="col-md-8 control-label">时间：</label>
+            			<div class="col-md-16">
+                             <div class="input-group date form_time" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input3" data-link-format="hh:ii" >
+                                 <input class="form-control input-sm time" name="orderTime" size="16" type="text" id="abcd" value="" >                             
+                                 <span class="input-group-addon">
+                                     <span class="glyphicon glyphicon-time"></span>
+                                 </span>
+                             </div>
+                         </div>
+            		</div>
+            	</div>
+
+                 <div class="col-md-7">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-md-8 control-label">订单类型：</label>
+                        <div class="col-md-16">
+                            <input type="text" class="form-control input-sm" id="inputEmail3" ></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                     <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" name="orderCheck" value="option1">问题</label>
+                </div>
+
+              </div>  
+              <!--订单状态-->
+              
+              <!--客户留言-->
+              <div class="row">
+                <div class="col-md-14">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-md-4 control-label">客户留言：</label>
+                        <div class="col-md-20">
+                            <textarea class="form-control" name="textarea" rows="3"></textarea></div>
+                    </div>
+                </div>
+              </div>
+              <!--客户留言-->
+
+              <!--备注-->
+              <div class="row">
+                <div class="col-md-14">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-md-4 control-label">备注：</label>
+                        <div class="col-md-20">
+                            <textarea class="form-control" rows="3"></textarea></div>
+                    </div>
+                </div>
+              </div>
+              <!--备注-->
+
+              <!--商店订单号--> 
+              <div class="row">
+                <div class="col-md-7">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-md-8 control-label">商店订单号：</label>
+                        <div class="col-md-16">
+                            <input type="text" class="form-control input-sm" id="inputEmail3" ></div>
+                    </div>
+                </div>
+             </div>
+             <!--商店订单号-->
+
+            </div>
+          </div>   
+    	</div> 
+    <!--订单-->
+
+    <!--货运-->
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">货运</h3>
+        </div>
+        <div class="panel-body">
+          <div class="form-horizontal">
+               
+             <!--货运方式-->
+             <div class="row">    
+                <div class="col-md-7">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-md-8 control-label">货运方式：</label>
+                        <div class="col-md-16">
+                            <select class="form-control input-sm">
+                                <option value="">Default select</option>
+                            </select>    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-md-8 control-label">修改方式：</label>
+                        <div class="col-md-16">
+                              <input type="text" class="form-control input-sm" id="inputEmail3" >
+                         </div>
+                    </div>
+                </div>
+                 <div class="col-md-7">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-md-8 control-label">实际快递：</label>
+                        <div class="col-md-16">
+                             <select class="form-control input-sm">
+                                <option value="">Default select</option>
+                            </select>     
+                        </div>
+                    </div>
+                </div>
+              </div>  
+              <!--货运方式--> 
+
+              <!--物流指令-->
+             <div class="row">    
+                <div class="col-md-7">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-md-8 control-label">物流指令：</label>
+                        <div class="col-md-16">
+                            <select class="form-control input-sm">
+                                <option value="">Default select</option>
+                            </select>    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-md-8 control-label">分批发货：</label>
+                        <div class="col-md-16">
+                              <input type="text" class="form-control input-sm" id="inputEmail3" >
+                         </div>
+                    </div>
+                </div>
+                 <div class="col-md-7">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-md-8 control-label">交货期：</label>
+                        <div class="col-md-16">
+                             <select class="form-control input-sm">
+                                <option value="">Default select</option>
+                            </select>     
+                        </div>
+                    </div>
+                </div>
+              </div>  
+              <!--物流指令--> 
+
+              <!--收货人-->
+             <div class="row">    
+                <div class="col-md-7">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-md-8 control-label">收货人名称：</label>
+                        <div class="col-md-16">
+                            <input type="text" class="form-control input-sm" id="inputEmail3" >    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-md-8 control-label">固定电话：</label>
+                        <div class="col-md-16">
+                              <input type="text" class="form-control input-sm" id="inputEmail3" >
+                         </div>
+                    </div>
+                </div>
+                 <div class="col-md-7">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-md-8 control-label">移动电话：</label>
+                        <div class="col-md-16">
+                             <input type="text" class="form-control input-sm" id="inputEmail3" >    
+                        </div>
+                    </div>
+                </div>
+              </div>  
+              <!--收货人--> 
+
+              <!--送货地址-->
+              <div class="row">
+                <div class="col-md-14">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-md-4 control-label">送货地址：</label>
+                        <div class="col-md-20">
+                            <textarea class="form-control" rows="3"></textarea></div>
+                    </div>
+                </div>
+              </div>
+              <!--送货地址-->           
+   
+          </div>
+        </div>
+    </div>        
+    <!--货运-->
+
+    <!--备注-->
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">备注</h3>
+        </div>
+        <div class="panel-body">
+          <div class="form-horizontal">
+
+                <!--结算方式-->
+                <div class="row">
+                     <div class="col-md-7">
+                         <div class="form-group">
+                             <label for="inputEmail3" class="col-md-8 control-label">结算方式：</label>
+                             <div class="col-md-16">
+                                  <input type="text" class="form-control input-sm" id="inputEmail3" >    
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-md-4">
+                         <label class="checkbox-inline">
+                             <input type="checkbox" id="inlineCheckbox1" value="option1">支付状态</label>
+                     </div>
+                     <div class="col-md-4">
+                         <label class="checkbox-inline">
+                             <input type="checkbox" id="inlineCheckbox1" value="option1">支付状态</label>
+                     </div>
+                 </div>    
+                <!--结算方式-->
+
+                <!--发票-->
+                <div class="row">
+                     <div class="col-md-7">
+                         <div class="form-group">
+                             <label for="inputEmail3" class="col-md-8 control-label">是否开发票：</label>
+                             <div class="col-md-16">
+                                   <input type="checkbox" id="inlineCheckbox1" value="option1">   
+                             </div>
+                         </div>
+                     </div>
+                </div>    
+                <div class="row">
+                     <div class="col-md-7">
+                         <div class="form-group">
+                             <label for="inputEmail3" class="col-md-8 control-label">发票类型：</label>
+                             <div class="col-md-16">
+                                   <select class="form-control input-sm">
+                                       <option value="">Default select</option>
+                                  </select>  
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-md-7">
+                         <div class="form-group">
+                             <label for="inputEmail3" class="col-md-8 control-label">开票类型：</label>
+                             <div class="col-md-16">
+                                  <select class="form-control input-sm">
+                                       <option value="">Default select</option>
+                                  </select>     
+                             </div>
+                         </div>
+                     </div>
+                </div>  
+                <!--发票-->
+
+                <!--地区-->
+                <div class="row">
+                     <div class="col-md-7">
+                         <div class="form-group">
+                             <label for="inputEmail3" class="col-md-8 control-label">国家：</label>
+                             <div class="col-md-16">
+                                  <select class="form-control input-sm">
+                                       <option value="">Default select</option>
+                                  </select>    
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-md-7">
+                         <div class="form-group">
+                             <label for="inputEmail3" class="col-md-8 control-label">省份：</label>
+                             <div class="col-md-16">
+                                  <select class="form-control input-sm">
+                                       <option value="">Default select</option>
+                                  </select>    
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-md-7">
+                         <div class="form-group">
+                             <label for="inputEmail3" class="col-md-8 control-label">城市：</label>
+                             <div class="col-md-16">
+                                  <select class="form-control input-sm">
+                                       <option value="">Default select</option>
+                                  </select>    
+                             </div>
+                         </div>
+                     </div>
+                 </div> 
+                 <div class="row">
+                     <div class="col-md-7">
+                         <div class="form-group">
+                             <label for="inputEmail3" class="col-md-8 control-label">区|县：</label>
+                             <div class="col-md-16">
+                                  <select class="form-control input-sm">
+                                       <option value="">Default select</option>
+                                  </select>    
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-md-7">
+                         <div class="form-group">
+                             <label for="inputEmail3" class="col-md-8 control-label">邮编：</label>
+                             <div class="col-md-16">
+                                  <select class="form-control input-sm">
+                                       <option value="">Default select</option>
+                                  </select>    
+                             </div>
+                         </div>
+                     </div>
+                 </div> 
+                <!--地区-->
+
+          </div>
+        </div>      
+    </div>  
+    <!--备注-->
+
+</div>
+     <button type="submit" class="btn btn-success">保存修改</button>
+</form>
+
+<script type="text/javascript">
+    $('.form_time').datetimepicker({
+        language:  'zh-CN',
+        todayBtn:  1,
+
+        autoclose: 1,
+
+        minView: 2
+    });
+</script>
+
+<script type="text/javascript">
+$("#commentForm").validate({
+        errorPlacement : function(error, element) { 
+            if (element.hasClass("time")) {
+                error.appendTo(element.parent().parent())
+            }else if(element.is(":checkbox")){
+                error.appendTo(element.parent().parent())  
+            }else{
+                error.appendTo(element.parent())  
+            };
+        },
+        rules: {
+            orderId:{
+                required:true,
+                number:true
+            },
+            orderTime:"required",
+            orderCheck:"required",
+            textarea:{
+                maxlength:10
+            }
+        },
+        messages: {
+            orderId:{
+                required:"订单号必须填写",
+                number:"订单号为数字"
+            },
+            orderTime:"不要忘记填写时间",
+            orderCheck:"我是测试",
+            textarea:{
+               maxlength:"你太长了"
+            }
+        }
+});
+</script>
+   
+</body>
+</html>	

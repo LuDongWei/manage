@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "D:\\svn\\app\\manage"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "D:\\Mbb.Dsp.Web\\Views"
+		}
+	]
+}
